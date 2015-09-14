@@ -1,2 +1,8 @@
+<<<<<<< HEAD
 ﻿Yesid Escobar - yaescobarg@unal.edu.co
 jose ramírez - jmramirezr@unal.edu.co
+=======
+﻿Yesid Escobar - yaescobarg@unal.edu.co
+jose ramírez - jmramirezr@unal.edu.co
+ESteban Cortes - lecortesr@unal.edu.co
+>>>>>>> origin/master
