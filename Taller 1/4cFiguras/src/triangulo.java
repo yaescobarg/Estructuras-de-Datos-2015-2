@@ -9,7 +9,7 @@ public class triangulo implements Figuras{
         this.lado2 = lado2;
         this.lado3 = lado3;
         if (lado1+lado2<lado3 || lado1+lado3<lado2 || lado2+lado3<lado1) {
-            throw new UnsupportedOperationException("Not supported yet.");
+            throw new UnsupportedOperationException("Ese triángulo no puede ser");
         }
     }
 
@@ -69,7 +69,7 @@ public class triangulo implements Figuras{
 
     @Override
     public String toString() {
-        return '{' + "Area = " + getArea() + ", Perímetro = " + getPerimetro() + '}';
+        return "Triángulo: Lados["+lado1+"]["+lado2+"]["+lado3+"], Area["+getArea()+"], Perímetro["+getPerimetro()+']';
     }
 
 }

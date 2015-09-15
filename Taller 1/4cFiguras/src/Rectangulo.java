@@ -1,14 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Yesid
- */
-public class Rectangulo  implements Figuras{
+public class Rectangulo implements Figuras {
 
     private double ancho;
     private double largo;
@@ -16,8 +6,8 @@ public class Rectangulo  implements Figuras{
     public Rectangulo(double ancho, double largo) {
         this.ancho = ancho;
         this.largo = largo;
-        if (ancho<=0 || largo<=0 ){
-        throw new UnsupportedOperationException("Not supported yet."); 
+        if (ancho <= 0 || largo <= 0) {
+            throw new UnsupportedOperationException("Los lados del rectángulo deben ser mayores a 0.");
         }
     }
 
@@ -32,7 +22,7 @@ public class Rectangulo  implements Figuras{
     Rectangulo() {
         ancho = 1;
         largo = 1;
-        }
+    }
 
     public double getArea() {
         return area(this.ancho, this.largo);
@@ -45,7 +35,7 @@ public class Rectangulo  implements Figuras{
     public double getAncho() {
         return ancho;
     }
-   
+
     public void setAncho(double ancho) {
         this.ancho = ancho;
     }
@@ -60,7 +50,7 @@ public class Rectangulo  implements Figuras{
 
     @Override
     public String toString() {
-        return '{' + "ancho=" + ancho + ", largo=" + largo + ", perímetro= " + getPerimetro() + ", area=  " + getArea() + '}';
+        return "Rectángulo: Ancho[" + ancho + "], Largo[" + largo + "], Area[" + getArea() + "], Perímetro[" + getPerimetro() + ']';
     }
 
 }

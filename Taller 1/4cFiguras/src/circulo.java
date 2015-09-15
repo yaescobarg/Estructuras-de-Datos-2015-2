@@ -6,7 +6,7 @@ public class circulo implements Figuras {
     public circulo(double radio) {
         this.radio = radio;
         if (radio <= 0) {
-            throw new UnsupportedOperationException("Not supported yet.");
+            throw new UnsupportedOperationException("Cambiar el radio por uno mayor a 0");
         }
     }
 
@@ -42,6 +42,6 @@ public class circulo implements Figuras {
 
     @Override
     public String toString() {
-        return '{' + "Area: " + getArea() + ", Perimetro: " + getPerimetro() + '}';
+        return "Círculo: Radio[" + radio + "], Area[" + getArea() + "], Perímetro[" + getPerimetro() + ']';
     }
 }
